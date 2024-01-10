@@ -1,0 +1,12 @@
+while true
+do
+echo 16384 > "/proc/sys/fs/inotify/max_queued_events"
+sleep 0.2
+echo 128 > "/proc/sys/fs/inotify/max_user_instances"
+sleep 0.2
+echo 8192 > "/proc/sys/fs/inotify/max_user_watches"
+sleep 0.2
+ set +x
+    let "j=j+1"
+   echo -e "\033[35;;1m 循环：$j 次！ \033[0m" 
+  done
