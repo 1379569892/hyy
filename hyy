@@ -1,5 +1,7 @@
-
 echo 
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/files/ano_tmp
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp
+
 prog_name="/data/temp"
 name=$(tr -dc \'1-9\' < /dev/urandom | head -c 8)
 while echo "$name" | grep -q "'"
