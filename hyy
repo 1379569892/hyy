@@ -42,25 +42,25 @@ echo "修改后：ro.serialno:$yy"
 while true
 do
 echo 16384 > "/proc/sys/fs/inotify/max_queued_events"
-sleep 1
+sleep 0.4
 echo 128 > "/proc/sys/fs/inotify/max_user_instances"
-sleep 1
+sleep 0.4
 echo 8192 > "/proc/sys/fs/inotify/max_user_watches"
-sleep 1
+sleep 0.4
 echo 1593200 > "/proc/sys/fs/epoll/max_user_watches"
-sleep 1
+sleep 0.4
 echo 1 > "/proc/sys/fs/verity/require_signatures"
-sleep 1
+sleep 0.4
 
 echo 1048576 > "/proc/sys/fs/nr_open"
-sleep 1
+sleep 0.4
 echo 65536 > "/proc/sys/fs/aio-max-nr"
-sleep 1
+sleep 0.4
 echo 742153 > "/proc/sys/fs/file-max"
-sleep 1
+sleep 0.4
 
 echo 16384 > "/proc/sys/fs/pipe-user-pages-soft"
-sleep 1
+sleep 0.4
 
  set +x
     let "j=j+1"
