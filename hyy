@@ -1,3 +1,4 @@
+    
 echo 
 rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/files/ano_tmp
 rm -rf /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp
@@ -27,7 +28,7 @@ resetprop ro.serialno $name
 echo 
 yy=$(getprop ro.serialno)
 echo "修改后：ro.serialno:$yy"
-#getprop ro.serialno
+    #getprop ro.serialno
 prog_name="/data/temp"
 name=$(tr -dc \'1-9\' < /dev/urandom | head -c 8)
 while echo "$name" | grep -q "'"
@@ -44,25 +45,12 @@ echo "修改后：ro.serialno:$yy"
 while true
 do
 echo 16384 > "/proc/sys/fs/inotify/max_queued_events"
-sleep 0.4
+sleep 0.01
 echo 128 > "/proc/sys/fs/inotify/max_user_instances"
-sleep 0.4
+sleep 0.01
 echo 8192 > "/proc/sys/fs/inotify/max_user_watches"
-sleep 0.4
-echo 1593200 > "/proc/sys/fs/epoll/max_user_watches"
-sleep 0.4
-echo 1 > "/proc/sys/fs/verity/require_signatures"
-sleep 0.4
+sleep 0.01
 
-echo 1048576 > "/proc/sys/fs/nr_open"
-sleep 0.4
-echo 65536 > "/proc/sys/fs/aio-max-nr"
-sleep 0.4
-echo 742153 > "/proc/sys/fs/file-max"
-sleep 0.4
-
-echo 16384 > "/proc/sys/fs/pipe-user-pages-soft"
-sleep 0.4
 
  set +x
     let "j=j+1"
