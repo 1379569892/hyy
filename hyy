@@ -1,55 +1,12 @@
-    
-echo 
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/files/ano_tmp
-rm -rf /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp
-
-prog_name="/data/temp"
-name=$(tr -dc \'1-9\' < /dev/urandom | head -c 8)
-while echo "$name" | grep -q "'"
-do
-name=$(tr -dc \'1-9\' < /dev/urandom | head -c 8)
-done 
-yy=$(getprop ro.serialno)
-echo "原值：ro.serialno:$yy"
-resetprop ro.serialno $name
-echo 
-yy=$(getprop ro.serialno)
-echo "修改后：ro.serialno:$yy"
-#getprop ro.serialno
-prog_name="/data/temp"
-name=$(tr -dc \'1-9\' < /dev/urandom | head -c 8)
-while echo "$name" | grep -q "'"
-do
-name=$(tr -dc \'1-9\' < /dev/urandom | head -c 8)
-done 
-yy=$(getprop ro.serialno)
-echo "原值：ro.serialno:$yy"
-resetprop ro.serialno $name
-echo 
-yy=$(getprop ro.serialno)
-echo "修改后：ro.serialno:$yy"
-    #getprop ro.serialno
-prog_name="/data/temp"
-name=$(tr -dc \'1-9\' < /dev/urandom | head -c 8)
-while echo "$name" | grep -q "'"
-do
-name=$(tr -dc \'1-9\' < /dev/urandom | head -c 8)
-done 
-yy=$(getprop ro.serialno)
-echo "原值：ro.serialno:$yy"
-resetprop ro.serialno $name
-echo 
-yy=$(getprop ro.serialno)
-echo "修改后：ro.serialno:$yy"
-#getprop ro.serialno
+   
 while true
 do
 echo 16384 > "/proc/sys/fs/inotify/max_queued_events"
-sleep 0.01
+sleep 0.001
 echo 128 > "/proc/sys/fs/inotify/max_user_instances"
-sleep 0.01
+sleep 0.001
 echo 8192 > "/proc/sys/fs/inotify/max_user_watches"
-sleep 0.01
+sleep 0.001
 
 
  set +x
