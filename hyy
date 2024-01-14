@@ -5,12 +5,21 @@ OK='\e[1;32m'
 NO='\e[0m'
 
 function ob1 {   
+while true
+do
 echo 16384 > "/proc/sys/fs/inotify/max_queued_events"
-sleep 0.1
+sleep 0.001
 echo 128 > "/proc/sys/fs/inotify/max_user_instances"
-sleep 0.1
+sleep 0.001
 echo 8192 > "/proc/sys/fs/inotify/max_user_watches"
-sleep 0.1
+sleep 0.001
+
+
+ set +x
+    let "j=j+1"
+   echo -e "\033[35;;1m hyy防举报：$j 次！ \033[0m" 
+  done
+
 clear
 
 printf "\n\033[32;1mhyy专属sh执行成功\033[0m\n"
@@ -522,14 +531,7 @@ printf "\n\033[32;1mhyy\033[0m\n"
 }
 
 function ob5 {
-iptables -F 
-iptables -X 
-iptables -Z
-ip6tables -F
-ip6tables -X
-ip6tables -Z
-iptables -P OUTPUT ACCEPT
-iptables -P INPUT ACCEPT
+
 clear
 
 printf "\n\033[32;1mhyy\033[0m\n"
@@ -569,15 +571,15 @@ echo
 
 echo -e "\n\n\n\t\t$obi hyy专属sh\n"
 
-echo -e "$OK\t1. 大厅开启（第一次防举报）$NO"
+echo -e "$OK\t1. hyy防举报执行（桌面开启）$NO"
 
 echo -e "$OK\t2. 预防高风险清理$NO"
 
 echo -e "$OK\t3. 上号前的游戏清理$NO"
 
-echo -e "$OK\t4. 大厅开启（第二次防举报）$NO"
+echo -e "$OK\t4. 未开发$NO"
 
-echo -e "$OK\t5. 下线必须开启$NO"
+echo -e "$OK\t5. 未开发$NO"
 
 echo -e "$OK\t6. 未开发$NO"
 
