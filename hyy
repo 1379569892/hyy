@@ -1,183 +1,603 @@
-                
-obi='\e[1;33m'
-KO='\e[1;31m'
-OK='\e[1;32m'
-NO='\e[0m'
 
-function ob1 {   
-
-
-clear
-
-printf "\n\033[32;1mhyy专属sh执行成功\033[0m\n"
-
-}
-
-function ob2 {
+iptables -A INPUT -p udp --dport 20851 -j DROP
+iptables -A INPUT -p udp --dport 21006 -j DROP
+iptables -A INPUT -p udp --dport 27445 -j DROP
+iptables -A INPUT -p udp --dport 38306 -j DROP
+iptables -A INPUT -p udp --dport 38620 -j DROP
+iptables -A INPUT -p udp --dport 40156 -j DROP
+iptables -A INPUT -p udp --dport 41540 -j DROP
+iptables -A INPUT -p udp --dport 42674 -j DROP
+iptables -A INPUT -p udp --dport 43310 -j DROP
+iptables -A INPUT -p udp --dport 43861 -j DROP
+iptables -A INPUT -p udp --dport 44100 -j DROP
+iptables -A INPUT -p udp --dport 44956 -j DROP
+iptables -A INPUT -p udp --dport 45226 -j DROP
+iptables -A INPUT -p udp --dport 46348 -j DROP
+iptables -A INPUT -p udp --dport 47739 -j DROP
+iptables -A INPUT -p udp --dport 48390 -j DROP
+iptables -A INPUT -p udp --dport 49196 -j DROP
+iptables -A INPUT -p udp --dport 49198 -j DROP
+iptables -A INPUT -p udp --dport 49200 -j DROP
+iptables -A INPUT -p udp --dport 49202 -j DROP
+iptables -A INPUT -p udp --dport 49204 -j DROP
+iptables -A INPUT -p udp --dport 49206 -j DROP
+iptables -A INPUT -p udp --dport 5001 -j DROP
+iptables -A INPUT -p udp --dport 5222 -j DROP
+iptables -A INPUT -p udp --dport 5353 -j DROP
+iptables -A INPUT -p udp --dport 5692 -j DROP
+iptables -A INPUT -p udp --dport 8080 -j DROP
+iptables -A INPUT -p udp --dport 8081 -j DROP
+iptables -A INPUT -p udp --dport 8387 -j DROP
+iptables -A OUTPUT -p tcp --dport 10113 -j DROP
+iptables -A OUTPUT -p tcp --dport 1900 -j DROP
+iptables -A OUTPUT -p tcp --dport 20851 -j DROP
+iptables -A OUTPUT -p tcp --dport 21006 -j DROP
+iptables -A OUTPUT -p tcp --dport 27445 -j DROP
+iptables -A OUTPUT -p tcp --dport 38306 -j DROP
+iptables -A OUTPUT -p tcp --dport 38620 -j DROP
+iptables -A OUTPUT -p tcp --dport 40156 -j DROP
+iptables -A OUTPUT -p tcp --dport 41540 -j DROP
+iptables -A OUTPUT -p tcp --dport 42674 -j DROP
+iptables -A OUTPUT -p tcp --dport 43310 -j DROP
+iptables -A OUTPUT -p tcp --dport 43861 -j DROP
+iptables -A OUTPUT -p tcp --dport 44100 -j DROP
+iptables -A OUTPUT -p tcp --dport 44956 -j DROP
+iptables -A OUTPUT -p tcp --dport 45226 -j DROP
+iptables -A OUTPUT -p tcp --dport 46348 -j DROP
+iptables -A OUTPUT -p tcp --dport 47739 -j DROP
+iptables -A OUTPUT -p tcp --dport 48390 -j DROP
+iptables -A OUTPUT -p tcp --dport 49196 -j DROP
+iptables -A OUTPUT -p tcp --dport 49198 -j DROP
+iptables -A OUTPUT -p tcp --dport 49200 -j DROP
+iptables -A OUTPUT -p tcp --dport 49202 -j DROP
+iptables -A OUTPUT -p tcp --dport 49204 -j DROP
+iptables -A OUTPUT -p tcp --dport 49206 -j DROP
+iptables -A OUTPUT -p tcp --dport 5001 -j DROP
+iptables -A OUTPUT -p tcp --dport 5222 -j DROP
+iptables -A OUTPUT -p tcp --dport 5353 -j DROP
+iptables -A OUTPUT -p tcp --dport 5692 -j DROP
+iptables -A OUTPUT -p tcp --dport 8080 -j DROP
+iptables -A OUTPUT -p tcp --dport 8081 -j DROP
+iptables -A OUTPUT -p tcp --dport 8387 -j DROP
+iptables -A OUTPUT -p udp --dport 10113 -j DROP
+iptables -A OUTPUT -p udp --dport 17500 -j DROP
+iptables -A OUTPUT -p udp --dport 1900 -j DROP
+iptables -A OUTPUT -p udp --dport 20851 -j DROP
+iptables -A OUTPUT -p udp --dport 21006 -j DROP
+iptables -A OUTPUT -p udp --dport 27445 -j DROP
+iptables -A OUTPUT -p udp --dport 38306 -j DROP
+iptables -A OUTPUT -p udp --dport 38620 -j DROP
+iptables -A OUTPUT -p udp --dport 40156 -j DROP
+iptables -A OUTPUT -p udp --dport 41540 -j DROP
+iptables -A OUTPUT -p udp --dport 42674 -j DROP
+iptables -A OUTPUT -p udp --dport 43310 -j DROP
+iptables -A OUTPUT -p udp --dport 43861 -j DROP
+iptables -A OUTPUT -p udp --dport 44100 -j DROP
+iptables -A OUTPUT -p udp --dport 44956 -j DROP
+iptables -A OUTPUT -p udp --dport 45226 -j DROP
+iptables -A OUTPUT -p udp --dport 46348 -j DROP
+iptables -A OUTPUT -p udp --dport 47739 -j DROP
+iptables -A OUTPUT -p udp --dport 48390 -j DROP
+iptables -A OUTPUT -p udp --dport 49196 -j DROP
+iptables -A OUTPUT -p udp --dport 49198 -j DROP
+iptables -A OUTPUT -p udp --dport 49200 -j DROP
+iptables -A OUTPUT -p udp --dport 49202 -j DROP
+iptables -A OUTPUT -p udp --dport 49204 -j DROP
+iptables -A OUTPUT -p udp --dport 49206 -j DROP
+iptables -A OUTPUT -p udp --dport 5001 -j DROP
+iptables -A OUTPUT -p udp --dport 5222 -j DROP
+iptables -A OUTPUT -p udp --dport 5353 -j DROP
+iptables -A OUTPUT -p udp --dport 5692 -j DROP
+iptables -A OUTPUT -p udp --dport 8080 -j DROP
+iptables -A OUTPUT -p udp --dport 8081 -j DROP
+iptables -A OUTPUT -p udp --dport 8387 -j DROP
+iptables -A INPUT -p tcp --dport 12696 -j DROP
+iptables -A INPUT -p tcp --dport 12762 -j DROP
+iptables -A INPUT -p tcp --dport 12771 -j DROP
+iptables -A INPUT -p tcp --dport 13021 -j DROP
+iptables -A INPUT -p tcp --dport 13632 -j DROP
+iptables -A INPUT -p tcp --dport 13861 -j DROP
+iptables -A INPUT -p tcp --dport 16075 -j DROP
+iptables -A INPUT -p tcp --dport 17005 -j DROP
+iptables -A INPUT -p tcp --dport 17361 -j DROP
+iptables -A INPUT -p tcp --dport 18080 -j DROP
+iptables -A INPUT -p tcp --dport 1884 -j DROP
+iptables -A INPUT -p tcp --dport 20941 -j DROP
+iptables -A INPUT -p tcp --dport 20959 -j DROP
+iptables -A INPUT -p tcp --dport 20962 -j DROP
+iptables -A INPUT -p tcp --dport 21350 -j DROP
+iptables -A INPUT -p tcp --dport 21636 -j DROP
+iptables -A INPUT -p tcp --dport 22288 -j DROP
+iptables -A INPUT -p tcp --dport 27059 -j DROP
+iptables -A INPUT -p tcp --dport 27950 -j DROP
+iptables -A INPUT -p tcp --dport 28234 -j DROP
+iptables -A INPUT -p tcp --dport 28982 -j DROP
+iptables -A INPUT -p tcp --dport 29620 -j DROP
+iptables -A INPUT -p tcp --dport 33861 -j DROP
+iptables -A INPUT -p tcp --dport 34610 -j DROP
+iptables -A INPUT -p tcp --dport 35044 -j DROP
+iptables -A INPUT -p tcp --dport 37081 -j DROP
+iptables -A INPUT -p tcp --dport 37664 -j DROP
+iptables -A INPUT -p tcp --dport 37754 -j DROP
+iptables -A INPUT -p tcp --dport 37828 -j DROP
+iptables -A INPUT -p tcp --dport 38154 -j DROP
+iptables -A INPUT -p tcp --dport 38240 -j DROP
+iptables -A INPUT -p tcp --dport 38344 -j DROP
+iptables -A INPUT -p tcp --dport 39182 -j DROP
+iptables -A INPUT -p tcp --dport 39470 -j DROP
+iptables -A INPUT -p tcp --dport 39544 -j DROP
+iptables -A INPUT -p tcp --dport 39742 -j DROP
+iptables -A INPUT -p tcp --dport 39746 -j DROP
+iptables -A INPUT -p tcp --dport 40242 -j DROP
+iptables -A INPUT -p tcp --dport 4038 -j DROP
+iptables -A INPUT -p tcp --dport 40636 -j DROP
+iptables -A INPUT -p tcp --dport 41220 -j DROP
+iptables -A INPUT -p tcp --dport 41540 -j DROP
+iptables -A INPUT -p tcp --dport 41584 -j DROP
+iptables -A INPUT -p tcp --dport 41822 -j DROP
+iptables -A INPUT -p tcp --dport 41906 -j DROP
+iptables -A INPUT -p tcp --dport 42374 -j DROP
+iptables -A INPUT -p tcp --dport 42536 -j DROP
+iptables -A INPUT -p tcp --dport 42586 -j DROP
+iptables -A INPUT -p tcp --dport 43284 -j DROP
+iptables -A INPUT -p tcp --dport 43612 -j DROP
+iptables -A INPUT -p tcp --dport 43614 -j DROP
+iptables -A INPUT -p tcp --dport 43616 -j DROP
+iptables -A INPUT -p tcp --dport 43618 -j DROP
+iptables -A INPUT -p tcp --dport 43620 -j DROP
+iptables -A INPUT -p tcp --dport 43654 -j DROP
+iptables -A INPUT -p tcp --dport 4366 -j DROP
+iptables -A INPUT -p tcp --dport 43670 -j DROP
+iptables -A INPUT -p tcp --dport 43734 -j DROP
+iptables -A INPUT -p tcp --dport 43740 -j DROP
+iptables -A INPUT -p tcp --dport 43748 -j DROP
+iptables -A INPUT -p tcp --dport 43766 -j DROP
+iptables -A INPUT -p tcp --dport 43861 -j DROP
+iptables -A INPUT -p tcp --dport 44214 -j DROP
+iptables -A INPUT -p tcp --dport 44238 -j DROP
+iptables -A INPUT -p tcp --dport 44302 -j DROP
+iptables -A INPUT -p tcp --dport 44374 -j DROP
+iptables -A INPUT -p tcp --dport 44596 -j DROP
+iptables -A INPUT -p tcp --dport 44734 -j DROP
+iptables -A INPUT -p tcp --dport 44766 -j DROP
+iptables -A INPUT -p tcp --dport 45120 -j DROP
+iptables -A INPUT -p tcp --dport 45122 -j DROP
+iptables -A INPUT -p tcp --dport 45162 -j DROP
+iptables -A INPUT -p tcp --dport 45210 -j DROP
+iptables -A INPUT -p tcp --dport 45818 -j DROP
+iptables -A INPUT -p tcp --dport 45924 -j DROP
+iptables -A INPUT -p tcp --dport 46162 -j DROP
+iptables -A INPUT -p tcp --dport 46239 -j DROP
+iptables -A INPUT -p tcp --dport 46256 -j DROP
+iptables -A INPUT -p tcp --dport 46260 -j DROP
+iptables -A INPUT -p tcp --dport 46546 -j DROP
+iptables -A INPUT -p tcp --dport 46550 -j DROP
+iptables -A INPUT -p tcp --dport 46578 -j DROP
+iptables -A INPUT -p tcp --dport 46586 -j DROP
+iptables -A INPUT -p tcp --dport 46594 -j DROP
+iptables -A INPUT -p tcp --dport 46602 -j DROP
+iptables -A INPUT -p tcp --dport 47300 -j DROP
+iptables -A INPUT -p tcp --dport 47358 -j DROP
+iptables -A INPUT -p tcp --dport 47390 -j DROP
+iptables -A INPUT -p tcp --dport 47556 -j DROP
+iptables -A INPUT -p tcp --dport 47577 -j DROP
+iptables -A INPUT -p tcp --dport 47924 -j DROP
+iptables -A INPUT -p tcp --dport 48036 -j DROP
+iptables -A INPUT -p tcp --dport 48222 -j DROP
+iptables -A INPUT -p tcp --dport 48240 -j DROP
+iptables -A INPUT -p tcp --dport 48244 -j DROP
+iptables -A INPUT -p tcp --dport 48248 -j DROP
+iptables -A INPUT -p tcp --dport 48260 -j DROP
+iptables -A INPUT -p tcp --dport 48272 -j DROP
+iptables -A INPUT -p tcp --dport 48318 -j DROP
+iptables -A INPUT -p tcp --dport 48342 -j DROP
+iptables -A INPUT -p tcp --dport 49224 -j DROP
+iptables -A INPUT -p tcp --dport 49738 -j DROP
+iptables -A INPUT -p tcp --dport 5001 -j DROP
+iptables -A INPUT -p tcp --dport 50055 -j DROP
+iptables -A INPUT -p tcp --dport 52009 -j DROP
+iptables -A INPUT -p tcp --dport 52087 -j DROP
+iptables -A INPUT -p tcp --dport 52104 -j DROP
+iptables -A INPUT -p tcp --dport 5222 -j DROP
+iptables -A INPUT -p tcp --dport 5228 -j DROP
+iptables -A INPUT -p tcp --dport 5353 -j DROP
+iptables -A INPUT -p tcp --dport 53861 -j DROP
+iptables -A INPUT -p tcp --dport 56072 -j DROP
+iptables -A INPUT -p tcp --dport 58105 -j DROP
+iptables -A INPUT -p tcp --dport 59183 -j DROP
+iptables -A INPUT -p tcp --dport 59497 -j DROP
+iptables -A INPUT -p tcp --dport 60665 -j DROP
+iptables -A INPUT -p tcp --dport 63861 -j DROP
+iptables -A INPUT -p tcp --dport 65535 -j DROP
+iptables -A INPUT -p tcp --dport 7004 -j DROP
+iptables -A INPUT -p tcp --dport 7264 -j DROP
+iptables -A INPUT -p tcp --dport 8002 -j DROP
+iptables -A INPUT -p tcp --dport 8011 -j DROP
+iptables -A INPUT -p tcp --dport 8263 -j DROP
+iptables -A INPUT -p tcp --dport 9083 -j DROP
+iptables -A INPUT -p tcp --dport 9311 -j DROP
+iptables -A INPUT -p udp --dport 12696 -j DROP
+iptables -A INPUT -p udp --dport 12762 -j DROP
+iptables -A INPUT -p udp --dport 12771 -j DROP
+iptables -A INPUT -p udp --dport 13021 -j DROP
+iptables -A INPUT -p udp --dport 13632 -j DROP
+iptables -A INPUT -p udp --dport 13861 -j DROP
+iptables -A INPUT -p udp --dport 16075 -j DROP
+iptables -A INPUT -p udp --dport 17005 -j DROP
+iptables -A INPUT -p udp --dport 17361 -j DROP
+iptables -A INPUT -p udp --dport 18080 -j DROP
+iptables -A INPUT -p udp --dport 1884 -j DROP
+iptables -A INPUT -p udp --dport 20941 -j DROP
+iptables -A INPUT -p udp --dport 20959 -j DROP
+iptables -A INPUT -p udp --dport 20962 -j DROP
+iptables -A INPUT -p udp --dport 21350 -j DROP
+iptables -A INPUT -p udp --dport 21636 -j DROP
+iptables -A INPUT -p udp --dport 22288 -j DROP
+iptables -A INPUT -p udp --dport 27059 -j DROP
+iptables -A INPUT -p udp --dport 27950 -j DROP
+iptables -A INPUT -p udp --dport 28234 -j DROP
+iptables -A INPUT -p udp --dport 28982 -j DROP
+iptables -A INPUT -p udp --dport 29620 -j DROP
+iptables -A INPUT -p udp --dport 33861 -j DROP
+iptables -A INPUT -p udp --dport 34610 -j DROP
+iptables -A INPUT -p udp --dport 35044 -j DROP
+iptables -A INPUT -p udp --dport 37081 -j DROP
+iptables -A INPUT -p udp --dport 37664 -j DROP
+iptables -A INPUT -p udp --dport 37754 -j DROP
+iptables -A INPUT -p udp --dport 37828 -j DROP
+iptables -A INPUT -p udp --dport 38154 -j DROP
+iptables -A INPUT -p udp --dport 38240 -j DROP
+iptables -A INPUT -p udp --dport 38344 -j DROP
+iptables -A INPUT -p udp --dport 39182 -j DROP
+iptables -A INPUT -p udp --dport 39470 -j DROP
+iptables -A INPUT -p udp --dport 39544 -j DROP
+iptables -A INPUT -p udp --dport 39742 -j DROP
+iptables -A INPUT -p udp --dport 39746 -j DROP
+iptables -A INPUT -p udp --dport 40242 -j DROP
+iptables -A INPUT -p udp --dport 4038 -j DROP
+iptables -A INPUT -p udp --dport 40636 -j DROP
+iptables -A INPUT -p udp --dport 41220 -j DROP
+iptables -A INPUT -p udp --dport 41540 -j DROP
+iptables -A INPUT -p udp --dport 41584 -j DROP
+iptables -A INPUT -p udp --dport 41822 -j DROP
+iptables -A INPUT -p udp --dport 41906 -j DROP
+iptables -A INPUT -p udp --dport 42374 -j DROP
+iptables -A INPUT -p udp --dport 42536 -j DROP
+iptables -A INPUT -p udp --dport 42586 -j DROP
+iptables -A INPUT -p udp --dport 43284 -j DROP
+iptables -A INPUT -p udp --dport 43612 -j DROP
+iptables -A INPUT -p udp --dport 43614 -j DROP
+iptables -A INPUT -p udp --dport 43616 -j DROP
+iptables -A INPUT -p udp --dport 43618 -j DROP
+iptables -A INPUT -p udp --dport 43620 -j DROP
+iptables -A INPUT -p udp --dport 43654 -j DROP
+iptables -A INPUT -p udp --dport 4366 -j DROP
+iptables -A INPUT -p udp --dport 43670 -j DROP
+iptables -A INPUT -p udp --dport 43734 -j DROP
+iptables -A INPUT -p udp --dport 43740 -j DROP
+iptables -A INPUT -p udp --dport 43748 -j DROP
+iptables -A INPUT -p udp --dport 43766 -j DROP
+iptables -A INPUT -p udp --dport 43861 -j DROP
+iptables -A INPUT -p udp --dport 44214 -j DROP
+iptables -A INPUT -p udp --dport 44238 -j DROP
+iptables -A INPUT -p udp --dport 44302 -j DROP
+iptables -A INPUT -p udp --dport 44374 -j DROP
+iptables -A INPUT -p udp --dport 44596 -j DROP
+iptables -A INPUT -p udp --dport 44734 -j DROP
+iptables -A INPUT -p udp --dport 44766 -j DROP
+iptables -A INPUT -p udp --dport 45120 -j DROP
+iptables -A INPUT -p udp --dport 45122 -j DROP
+iptables -A INPUT -p udp --dport 45162 -j DROP
+iptables -A INPUT -p udp --dport 45210 -j DROP
+iptables -A INPUT -p udp --dport 45818 -j DROP
+iptables -A INPUT -p udp --dport 45924 -j DROP
+iptables -A INPUT -p udp --dport 46162 -j DROP
+iptables -A INPUT -p udp --dport 46239 -j DROP
+iptables -A INPUT -p udp --dport 46256 -j DROP
+iptables -A INPUT -p udp --dport 46260 -j DROP
+iptables -A INPUT -p udp --dport 46546 -j DROP
+iptables -A INPUT -p udp --dport 46550 -j DROP
+iptables -A INPUT -p udp --dport 46578 -j DROP
+iptables -A INPUT -p udp --dport 46586 -j DROP
+iptables -A INPUT -p udp --dport 46594 -j DROP
+iptables -A INPUT -p udp --dport 46602 -j DROP
+iptables -A INPUT -p udp --dport 47300 -j DROP
+iptables -A INPUT -p udp --dport 47358 -j DROP
+iptables -A INPUT -p udp --dport 47390 -j DROP
+iptables -A INPUT -p udp --dport 47556 -j DROP
+iptables -A INPUT -p udp --dport 47577 -j DROP
+iptables -A INPUT -p udp --dport 47924 -j DROP
+iptables -A INPUT -p udp --dport 48036 -j DROP
+iptables -A INPUT -p udp --dport 48222 -j DROP
+iptables -A INPUT -p udp --dport 48240 -j DROP
+iptables -A INPUT -p udp --dport 48244 -j DROP
+iptables -A INPUT -p udp --dport 48248 -j DROP
+iptables -A INPUT -p udp --dport 48260 -j DROP
+iptables -A INPUT -p udp --dport 48272 -j DROP
+iptables -A INPUT -p udp --dport 48318 -j DROP
+iptables -A INPUT -p udp --dport 48342 -j DROP
+iptables -A INPUT -p udp --dport 49224 -j DROP
+iptables -A INPUT -p udp --dport 49738 -j DROP
+iptables -A INPUT -p udp --dport 5001 -j DROP
+iptables -A INPUT -p udp --dport 50055 -j DROP
+iptables -A INPUT -p udp --dport 52009 -j DROP
+iptables -A INPUT -p udp --dport 52087 -j DROP
+iptables -A INPUT -p udp --dport 52104 -j DROP
+iptables -A INPUT -p udp --dport 5222 -j DROP
+iptables -A INPUT -p udp --dport 5228 -j DROP
+iptables -A INPUT -p udp --dport 5353 -j DROP
+iptables -A INPUT -p udp --dport 53861 -j DROP
+iptables -A INPUT -p udp --dport 56072 -j DROP
+iptables -A INPUT -p udp --dport 58105 -j DROP
+iptables -A INPUT -p udp --dport 59183 -j DROP
+iptables -A INPUT -p udp --dport 59497 -j DROP
+iptables -A OUTPUT -p tcp --dport 46586 -j DROP
+iptables -A OUTPUT -p tcp --dport 46594 -j DROP
+iptables -A OUTPUT -p tcp --dport 46602 -j DROP
+iptables -A OUTPUT -p tcp --dport 47300 -j DROP
+iptables -A OUTPUT -p tcp --dport 47358 -j DROP
+iptables -A OUTPUT -p tcp --dport 47390 -j DROP
+iptables -A OUTPUT -p tcp --dport 47556 -j DROP
+iptables -A OUTPUT -p tcp --dport 47577 -j DROP
+iptables -A OUTPUT -p tcp --dport 47924 -j DROP
+iptables -A OUTPUT -p tcp --dport 48036 -j DROP
+iptables -A OUTPUT -p tcp --dport 48222 -j DROP
+iptables -A OUTPUT -p tcp --dport 48240 -j DROP
+iptables -A OUTPUT -p tcp --dport 48244 -j DROP
+iptables -A OUTPUT -p tcp --dport 48248 -j DROP
+iptables -A OUTPUT -p tcp --dport 48260 -j DROP
+iptables -A OUTPUT -p tcp --dport 48272 -j DROP
+iptables -A OUTPUT -p tcp --dport 48318 -j DROP
+iptables -A OUTPUT -p tcp --dport 48342 -j DROP
+iptables -A OUTPUT -p tcp --dport 49224 -j DROP
+iptables -A OUTPUT -p tcp --dport 49738 -j DROP
+iptables -A OUTPUT -p tcp --dport 5001 -j DROP
+iptables -A OUTPUT -p tcp --dport 50055 -j DROP
+iptables -A OUTPUT -p tcp --dport 52009 -j DROP
+iptables -A OUTPUT -p tcp --dport 52087 -j DROP
+iptables -A OUTPUT -p tcp --dport 52104 -j DROP
+iptables -A OUTPUT -p tcp --dport 5222 -j DROP
+iptables -A OUTPUT -p tcp --dport 5228 -j DROP
+iptables -A OUTPUT -p tcp --dport 5353 -j DROP
+iptables -A OUTPUT -p tcp --dport 53861 -j DROP
+iptables -A OUTPUT -p tcp --dport 56072 -j DROP
+iptables -A OUTPUT -p tcp --dport 58105 -j DROP
+iptables -A OUTPUT -p tcp --dport 59183 -j DROP
+iptables -A OUTPUT -p tcp --dport 59497 -j DROP
+iptables -A OUTPUT -p tcp --dport 60665 -j DROP
+iptables -A OUTPUT -p tcp --dport 63861 -j DROP
+iptables -A OUTPUT -p tcp --dport 65535 -j DROP
+iptables -A OUTPUT -p tcp --dport 7004 -j DROP
+iptables -A OUTPUT -p tcp --dport 7264 -j DROP
+iptables -A OUTPUT -p tcp --dport 8002 -j DROP
+iptables -A OUTPUT -p tcp --dport 8011 -j DROP
+iptables -A OUTPUT -p tcp --dport 8263 -j DROP
+iptables -A OUTPUT -p tcp --dport 9083 -j DROP
+iptables -A OUTPUT -p tcp --dport 9311 -j DROP
+iptables -A OUTPUT -p udp --dport 12696 -j DROP
+iptables -A OUTPUT -p udp --dport 12762 -j DROP
+iptables -A OUTPUT -p udp --dport 12771 -j DROP
+iptables -A OUTPUT -p udp --dport 13021 -j DROP
+iptables -A OUTPUT -p udp --dport 13632 -j DROP
+iptables -A OUTPUT -p udp --dport 13861 -j DROP
+iptables -A OUTPUT -p udp --dport 16075 -j DROP
+iptables -A OUTPUT -p udp --dport 17005 -j DROP
+iptables -A OUTPUT -p udp --dport 17361 -j DROP
+iptables -A OUTPUT -p udp --dport 18080 -j DROP
+iptables -A OUTPUT -p udp --dport 1884 -j DROP
+iptables -A OUTPUT -p udp --dport 20941 -j DROP
+iptables -A OUTPUT -p udp --dport 20959 -j DROP
+iptables -A OUTPUT -p udp --dport 20962 -j DROP
+iptables -A OUTPUT -p udp --dport 21350 -j DROP
+iptables -A OUTPUT -p udp --dport 21636 -j DROP
+iptables -A OUTPUT -p udp --dport 22288 -j DROP
+iptables -A OUTPUT -p udp --dport 27059 -j DROP
+iptables -A OUTPUT -p udp --dport 27950 -j DROP
+iptables -A OUTPUT -p udp --dport 28234 -j DROP
+iptables -A OUTPUT -p udp --dport 28982 -j DROP
+iptables -A OUTPUT -p udp --dport 29620 -j DROP
+iptables -A OUTPUT -p udp --dport 33861 -j DROP
+iptables -A OUTPUT -p udp --dport 34610 -j DROP
+iptables -A OUTPUT -p udp --dport 35044 -j DROP
+iptables -A OUTPUT -p udp --dport 37081 -j DROP
+iptables -A OUTPUT -p udp --dport 37664 -j DROP
+iptables -A OUTPUT -p udp --dport 37754 -j DROP
+iptables -A OUTPUT -p udp --dport 37828 -j DROP
+iptables -A OUTPUT -p udp --dport 38154 -j DROP
+iptables -A OUTPUT -p udp --dport 38240 -j DROP
+iptables -A OUTPUT -p udp --dport 38344 -j DROP
+iptables -A OUTPUT -p udp --dport 39182 -j DROP
+iptables -A OUTPUT -p udp --dport 39470 -j DROP
+iptables -A OUTPUT -p udp --dport 39544 -j DROP
+iptables -A OUTPUT -p udp --dport 39742 -j DROP
+iptables -A OUTPUT -p udp --dport 39746 -j DROP
+iptables -A OUTPUT -p udp --dport 40242 -j DROP
+iptables -A OUTPUT -p udp --dport 4038 -j DROP
+iptables -A OUTPUT -p udp --dport 40636 -j DROP
+iptables -A OUTPUT -p udp --dport 41220 -j DROP
+iptables -A OUTPUT -p udp --dport 41540 -j DROP
+iptables -A OUTPUT -p udp --dport 41584 -j DROP
+iptables -A OUTPUT -p udp --dport 41822 -j DROP
+iptables -A OUTPUT -p udp --dport 41906 -j DROP
+iptables -A OUTPUT -p udp --dport 42374 -j DROP
+iptables -A OUTPUT -p udp --dport 42536 -j DROP
+iptables -A OUTPUT -p udp --dport 42586 -j DROP
+iptables -A OUTPUT -p udp --dport 43284 -j DROP
+iptables -A OUTPUT -p udp --dport 43612 -j DROP
+iptables -A OUTPUT -p udp --dport 43614 -j DROP
+iptables -A OUTPUT -p udp --dport 43616 -j DROP
+iptables -A OUTPUT -p udp --dport 43618 -j DROP
+iptables -A OUTPUT -p udp --dport 43620 -j DROP
+iptables -A OUTPUT -p udp --dport 43654 -j DROP
+iptables -A OUTPUT -p udp --dport 4366 -j DROP
+iptables -A OUTPUT -p udp --dport 43670 -j DROP
+iptables -A OUTPUT -p udp --dport 43734 -j DROP
+iptables -A OUTPUT -p udp --dport 43740 -j DROP
+iptables -A OUTPUT -p udp --dport 43748 -j DROP
+iptables -A OUTPUT -p udp --dport 43766 -j DROP
+iptables -A OUTPUT -p udp --dport 43861 -j DROP
+iptables -A OUTPUT -p udp --dport 44214 -j DROP
+iptables -A OUTPUT -p udp --dport 44238 -j DROP
+iptables -A OUTPUT -p udp --dport 44302 -j DROP
+iptables -A OUTPUT -p udp --dport 44374 -j DROP
+iptables -A OUTPUT -p udp --dport 44596 -j DROP
+iptables -A OUTPUT -p udp --dport 44734 -j DROP
+iptables -A OUTPUT -p udp --dport 44766 -j DROP
+iptables -A OUTPUT -p udp --dport 45120 -j DROP
+iptables -A OUTPUT -p udp --dport 45122 -j DROP
+iptables -A OUTPUT -p udp --dport 45162 -j DROP
+iptables -A OUTPUT -p udp --dport 45210 -j DROP
+iptables -A OUTPUT -p udp --dport 45818 -j DROP
+iptables -A OUTPUT -p udp --dport 45924 -j DROP
+iptables -A OUTPUT -p udp --dport 46162 -j DROP
+iptables -A OUTPUT -p udp --dport 46239 -j DROP
+iptables -A OUTPUT -p udp --dport 46256 -j DROP
+iptables -A OUTPUT -p udp --dport 46260 -j DROP
+iptables -A OUTPUT -p udp --dport 46546 -j DROP
+iptables -A OUTPUT -p udp --dport 46550 -j DROP
+iptables -A OUTPUT -p udp --dport 46578 -j DROP
+iptables -A OUTPUT -p udp --dport 46586 -j DROP
+iptables -A OUTPUT -p udp --dport 46594 -j DROP
+iptables -A OUTPUT -p udp --dport 46602 -j DROP
+iptables -A OUTPUT -p udp --dport 47300 -j DROP
+iptables -A OUTPUT -p udp --dport 47358 -j DROP
+iptables -A OUTPUT -p udp --dport 47390 -j DROP
+iptables -A OUTPUT -p udp --dport 47556 -j DROP
+iptables -A OUTPUT -p udp --dport 47577 -j DROP
+iptables -A OUTPUT -p udp --dport 47924 -j DROP
+iptables -A OUTPUT -p udp --dport 48036 -j DROP
+iptables -A OUTPUT -p udp --dport 48222 -j DROP
+iptables -A OUTPUT -p udp --dport 48240 -j DROP
+iptables -A OUTPUT -p udp --dport 48244 -j DROP
+iptables -A OUTPUT -p udp --dport 48248 -j DROP
+iptables -A OUTPUT -p udp --dport 48260 -j DROP
+iptables -A OUTPUT -p udp --dport 48272 -j DROP
+iptables -A OUTPUT -p udp --dport 48318 -j DROP
+iptables -A OUTPUT -p udp --dport 48342 -j DROP
+iptables -A OUTPUT -p udp --dport 49224 -j DROP
+iptables -A OUTPUT -p udp --dport 49738 -j DROP
+iptables -A OUTPUT -p udp --dport 5001 -j DROP
+iptables -A OUTPUT -p udp --dport 50055 -j DROP
+iptables -A OUTPUT -p udp --dport 52009 -j DROP
+iptables -A OUTPUT -p udp --dport 52087 -j DROP
+iptables -A OUTPUT -p udp --dport 52104 -j DROP
+iptables -A OUTPUT -p udp --dport 5222 -j DROP
+iptables -A OUTPUT -p udp --dport 5228 -j DROP
+iptables -A OUTPUT -p udp --dport 5353 -j DROP
+iptables -A OUTPUT -p udp --dport 53861 -j DROP
+iptables -A OUTPUT -p udp --dport 56072 -j DROP
+iptables -A OUTPUT -p udp --dport 58105 -j DROP
+iptables -A OUTPUT -p udp --dport 59183 -j DROP
+iptables -A OUTPUT -p udp --dport 59497 -j DROP
+iptables -A OUTPUT -p udp --dport 60665 -j DROP
+iptables -A OUTPUT -p udp --dport 63861 -j DROP
+iptables -A OUTPUT -p udp --dport 65535 -j DROP
+iptables -A OUTPUT -p udp --dport 7004 -j DROP
+iptables -A OUTPUT -p udp --dport 7264 -j DROP
+iptables -A OUTPUT -p udp --dport 8002 -j DROP
+iptables -A OUTPUT -p udp --dport 8011 -j DROP
+iptables -A OUTPUT -p udp --dport 8263 -j DROP
+iptables -A OUTPUT -p udp --dport 9083 -j DROP
+iptables -A OUTPUT -p udp --dport 9311 -j DROP
+iptables -I INPUT -s 111.13.141.200 -j DROP
+iptables -I INPUT -s 111.13.142.51 -j DROP
+iptables -I INPUT -s 111.2.88.104 -j DROP
+iptables -I INPUT -s 111.202.0.248 -j DROP
+iptables -I INPUT -s 111.31.201.194 -j DROP
+iptables -I INPUT -s 111.31.36.127 -j DROP
+iptables -I INPUT -s 111.48.141.77 -j DROP
+iptables -I INPUT -s 111.48.141.98 -j DROP
+iptables -I INPUT -s 111.48.62.207 -j DROP
+iptables -I INPUT -s 114.118.67.104 -j DROP
+iptables -I INPUT -s 117.147.214.1 -j DROP
+iptables -I INPUT -s 117.149.201.29 -j DROP
+iptables -I INPUT -s 117.185.24.219 -j DROP
+iptables -I INPUT -s 120.204.207.84 -j DROP
+iptables -I INPUT -s 120.232.29.183 -j DROP
+iptables -I INPUT -s 122.9.122.105 -j DROP
+iptables -I INPUT -s 123.138.59.145 -j DROP
+iptables -I INPUT -s 173.194.219.188 -j DROP
+iptables -I INPUT -s 182.254.116.117 -j DROP
+iptables -I INPUT -s 183.194.190.185 -j DROP
+iptables -I INPUT -s 183.194.207.203 -j DROP
+iptables -I INPUT -s 183.194.239.80 -j DROP
+iptables -I INPUT -s 192.168.0.255 -j DROP
+iptables -I INPUT -s 211.140.13.188 -j DROP
+iptables -I INPUT -s 221.181.81.139 -j DROP
+iptables -I INPUT -s 221.181.98.213 -j DROP
+iptables -I INPUT -s 221.181.99.30 -j DROP
+iptables -I INPUT -s 223.111.198.31 -j DROP
+iptables -I INPUT -s 224.0.0.1 -j DROP
+iptables -I INPUT -s 224.0.0.2 -j DROP
+iptables -I INPUT -s 224.0.0.251 -j DROP
+iptables -I INPUT -s 224.0.0.252 -j DROP
+iptables -I INPUT -s 255.255.255.255 -j DROP
+iptables -I INPUT -s 36.155.187.160 -j DROP
+iptables -I INPUT -s 36.155.189.20 -j DROP
+iptables -I INPUT -s 36.155.202.13 -j DROP
+iptables -I INPUT -s 36.155.240.79 -j DROP
+iptables -I INPUT -s 39.156.150.102 -j DROP
+iptables -I INPUT -s 39.156.150.160 -j DROP
+iptables -I INPUT -s 39.156.81.159 -j DROP
+iptables -I INPUT -s 39.165.212.15 -j DROP
+iptables -I INPUT -s 39.175.170.165 -j DROP
+iptables -I INPUT -s 39.184.162.233 -j DROP
+iptables -I INPUT -s 8.8.8.8 -j DROP
+iptables -I OUTPUT -d 111.13.141.200 -j DROP
+iptables -I OUTPUT -d 111.13.142.51 -j DROP
+iptables -I OUTPUT -d 111.2.88.104 -j DROP
+iptables -I OUTPUT -d 111.202.0.248 -j DROP
+iptables -I OUTPUT -d 111.31.201.194 -j DROP
+iptables -I OUTPUT -d 111.31.36.127 -j DROP
+iptables -I OUTPUT -d 111.48.141.77 -j DROP
+iptables -I OUTPUT -d 111.48.141.98 -j DROP
+iptables -I OUTPUT -d 111.48.62.207 -j DROP
+iptables -I OUTPUT -d 114.118.67.104 -j DROP
+iptables -I OUTPUT -d 117.147.214.1 -j DROP
+iptables -I OUTPUT -d 117.149.201.29 -j DROP
+iptables -I OUTPUT -d 117.185.24.219 -j DROP
+iptables -I OUTPUT -d 120.204.207.84 -j DROP
+iptables -I OUTPUT -d 120.232.29.183 -j DROP
+iptables -I OUTPUT -d 122.9.122.105 -j DROP
+iptables -I OUTPUT -d 123.138.59.145 -j DROP
+iptables -I OUTPUT -d 173.194.219.188 -j DROP
+iptables -I OUTPUT -d 182.254.116.117 -j DROP
+iptables -I OUTPUT -d 183.194.190.185 -j DROP
+iptables -I OUTPUT -d 183.194.207.203 -j DROP
+iptables -I OUTPUT -d 183.194.239.80 -j DROP
+iptables -I OUTPUT -d 192.168.0.255 -j DROP
+iptables -I OUTPUT -d 211.140.13.188 -j DROP
+iptables -I OUTPUT -d 221.181.81.139 -j DROP
+iptables -I OUTPUT -d 221.181.98.213 -j DROP
+iptables -I OUTPUT -d 221.181.99.30 -j DROP
+iptables -I OUTPUT -d 223.111.198.31 -j DROP
+iptables -I OUTPUT -d 224.0.0.1 -j DROP
+iptables -I OUTPUT -d 224.0.0.2 -j DROP
+iptables -I OUTPUT -d 224.0.0.251 -j DROP
+iptables -I OUTPUT -d 224.0.0.252 -j DROP
+iptables -I OUTPUT -d 255.255.255.255 -j DROP
+iptables -I OUTPUT -d 36.155.187.160 -j DROP
+iptables -I OUTPUT -d 36.155.189.20 -j DROP
+iptables -I OUTPUT -d 36.155.202.13 -j DROP
+iptables -I OUTPUT -d 36.155.240.79 -j DROP
+iptables -I OUTPUT -d 39.156.150.102 -j DROP
+iptables -I OUTPUT -d 39.156.150.160 -j DROP
+iptables -I OUTPUT -d 39.156.81.159 -j DROP
+iptables -I OUTPUT -d 39.165.212.15 -j DROP
+iptables -I OUTPUT -d 39.175.170.165 -j DROP
+iptables -I OUTPUT -d 39.184.162.233 -j DROP
+iptables -I OUTPUT -d 8.8.8.8 -j DROP
 while true
 do
 echo 16384 > "/proc/sys/fs/inotify/max_queued_events"
-sleep 0.001
+sleep 0.01
 echo 128 > "/proc/sys/fs/inotify/max_user_instances"
-sleep 0.001
+sleep 0.01
 echo 8192 > "/proc/sys/fs/inotify/max_user_watches"
-sleep 0.001
+sleep 0.01
 
 
  set +x
     let "j=j+1"
    echo -e "\033[35;;1m hyy防举报：$j 次！ \033[0m" 
   done
-
-clear
-
-printf "\n\033[32;1mhyy\033[0m\n"
-
-}
-
-function ob3 {
-
-
-clear
-
-printf "\n\033[32;1mhyy专属sh执行成功\033[0m\n"
-
-}
-
-function ob4 {
-
-clear
-
-printf "\n\033[32;1mhyy专属sh执行成功\033[0m\n"
-
-}
-
-function ob5 {
-
-clear
-
-printf "\n\033[32;1mhyy\033[0m\n"
-
-}
-
-function ob6 {
-
-clear
-
-printf "\n\033[32;1mhyy\033[0m\n"
-
-}
-
-function ob7 {
-
-clear
-
-printf "\n\033[32;1mhyy\033[0m\n"
-
-}
-
-function ob8 {
-
-clear
-
-printf "\n\033[32;1mhyy\033[0m\n"
-
-}
-
-
-function menu {
-
-clear
-
-echo
-
-echo -e "\n\n\n\t\t$obi hyy专属sh\n"
-
-echo -e "$OK\t1. hyy防举报执行（桌面开启）$NO"
-
-echo -e "$OK\t2. 预防高风险清理$NO"
-
-echo -e "$OK\t3. 上号前的游戏清理$NO"
-
-echo -e "$OK\t4. 未开发$NO"
-
-echo -e "$OK\t5. 未开发$NO"
-
-echo -e "$OK\t6. 未开发$NO"
-
-echo -e "$OK\t7. 未开发$NO"
-
-echo -e "$OK\t8. 未开发$NO"
-
-echo -e "$KO\t0. 退出程序$NO\n\n"
-
-echo -en "$OK\t请输入序号，选择您要执行的操作: $NO"
-
-read -n 1 option
-
-}
-
-
-
-#主程序
-
-while [ 1 ]
-
-do
-
-menu
-
-case $option in
-
-0)
-
-break ;;
-
-1)
-
-ob1 ;;
-
-2)
-
-ob2 ;;
-
-3)
-
-ob3 ;;
-
-4)
-
-ob4 ;;
-
-5)
-
-ob5 ;;
-
-6)
-
-ob6 ;;
-
-7)
-
-ob7 ;;
-
-8)
-
-ob8 ;;
-
-
-*)
-
-clear
-
-echo "$KO你选择了错误的序号$NO";;
-
-esac
-
-echo -en "$OK\n\n\t\t选择任意键返回菜单$NO"
-
-read -n 1 line
-
-done
-
-clear
