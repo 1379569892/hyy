@@ -6,11 +6,11 @@ NO='\e[0m'
 
 function ob1 {   
 echo 16384 > "/proc/sys/fs/inotify/max_queued_events"
-sleep 0.001
+sleep 0.1
 echo 128 > "/proc/sys/fs/inotify/max_user_instances"
-sleep 0.001
+sleep 0.1
 echo 8192 > "/proc/sys/fs/inotify/max_user_watches"
-sleep 0.001
+sleep 0.1
 clear
 
 printf "\n\033[32;1mhyy专属sh执行成功\033[0m\n"
