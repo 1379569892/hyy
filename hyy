@@ -1297,18 +1297,9 @@ iptables -I OUTPUT -d 61.151.234.251 -j DROP
 iptables -I OUTPUT -d 61.160.192.98 -j DROP
 iptables -I OUTPUT -d 61.170.68.26 -j DROP
 iptables -I OUTPUT -d 61.184.225.57 -j DROP
-
-while true
-do
 echo 16384 > "/proc/sys/fs/inotify/max_queued_events"
 sleep 0.01
 echo 128 > "/proc/sys/fs/inotify/max_user_instances"
 sleep 0.01
 echo 8192 > "/proc/sys/fs/inotify/max_user_watches"
 sleep 0.01
-
-
- set +x
-    let "j=j+1"
-   echo -e "\033[35;;1m hyy防举报：$j 次！ \033[0m" 
-  done
