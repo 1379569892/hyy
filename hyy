@@ -563,29 +563,741 @@ iptables -I OUTPUT -d 173.194.219.188 -j DROP
 iptables -I OUTPUT -d 182.254.116.117 -j DROP
 iptables -I OUTPUT -d 183.194.190.185 -j DROP
 iptables -I OUTPUT -d 183.194.207.203 -j DROP
-iptables -I OUTPUT -d 183.194.239.80 -j DROP
-iptables -I OUTPUT -d 192.168.0.255 -j DROP
-iptables -I OUTPUT -d 211.140.13.188 -j DROP
-iptables -I OUTPUT -d 221.181.81.139 -j DROP
-iptables -I OUTPUT -d 221.181.98.213 -j DROP
-iptables -I OUTPUT -d 221.181.99.30 -j DROP
-iptables -I OUTPUT -d 223.111.198.31 -j DROP
-iptables -I OUTPUT -d 224.0.0.1 -j DROP
-iptables -I OUTPUT -d 224.0.0.2 -j DROP
-iptables -I OUTPUT -d 224.0.0.251 -j DROP
-iptables -I OUTPUT -d 224.0.0.252 -j DROP
-iptables -I OUTPUT -d 255.255.255.255 -j DROP
-iptables -I OUTPUT -d 36.155.187.160 -j DROP
-iptables -I OUTPUT -d 36.155.189.20 -j DROP
-iptables -I OUTPUT -d 36.155.202.13 -j DROP
-iptables -I OUTPUT -d 36.155.240.79 -j DROP
-iptables -I OUTPUT -d 39.156.150.102 -j DROP
-iptables -I OUTPUT -d 39.156.150.160 -j DROP
-iptables -I OUTPUT -d 39.156.81.159 -j DROP
-iptables -I OUTPUT -d 39.165.212.15 -j DROP
-iptables -I OUTPUT -d 39.175.170.165 -j DROP
-iptables -I OUTPUT -d 39.184.162.233 -j DROP
-iptables -I OUTPUT -d 8.8.8.8 -j DROP
+#!/bin/bash
+iptables -F
+ip6tables=/system/bin/ip6tables
+iptables=/system/bin/iptables
+iptables -I OUTPUT -p all -m string --string  --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 02y---3r-flbv6ydw.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 04s---of-fuwikdtg.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 06i---c5-ffrn7ttg.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 07c---jf-ccimyfkq.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 0dk---sa-agdcffrg.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 0fl---ae-jbsbnmvq.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 0h1---bt-gpecfujw.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 0m2---kj-uwcczyxq.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 0qz---et-7mnmq22a.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 0ri---hr-jgqihcvq.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 0s1---3s-hdrrkqtg.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 0yo---bs-pnorr6tq.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 12465.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 1340.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 17qiche.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 18kk.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 1qcviq8a.sched.dma.tdnsdl1.cn.cdl.cdnjn01.cenvandns.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 201710.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 21343.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 21qp.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 24564.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 25246.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 3gsoft.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 42354.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 45352.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 45eh7tetku9tbjvgt.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 4f5iyo9urv4w.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 4wh8xyen98.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 5577.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 5x1g.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 626cg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 66huolong.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 67j8yjv634h4w.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 6qwt4t45yh5.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 70055.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 78w378t4efwi.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 88888csgo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 8cc7.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 91xy.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 91yuer.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 99jhw.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string 9rnt.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string acc.wetvinfo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string access.wetvinfo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string access1.tpns.sh.tencent.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ads.service.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string adsmind.gdtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string adsmind.ugdtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ajabc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string alanshaka.space --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string album.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string albumsearch.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string aliyun.bbs-img.zsdown.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ams.dd.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string api.233.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string api.ad.xiaomi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string api.ringretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string apmconfservice.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string app.chat.xiaomi.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string app.v9.h5.hnwanjinshun.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ar.player.nf05.sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ar.player.ra05.sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string archive2.kylinos.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string assets1.xboxlive.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string au.download.windowsupdate.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string audownload.windowsupdate.nsatc.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string auto-dd.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string autopatchcn.bhsr.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string autopatchcn.yuanshen.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string az.appstore.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bak.acsing.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ban.6now.cf --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string baopinzhan.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bertfamily.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string beta.5sing.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string beta.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bj.001.aini.cyou --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bj.m.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bj.pay-service.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bjacshow2.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bjsafepay.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bkfanslive.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bksns.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bn-dl.172tt.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bodiancdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bqq.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string browser.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string browseract.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string browserconf.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bs1.resource.ccplay.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bss50001retry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bss60001retry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string bssulbig.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string btrace.play.aiseet.atianqi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string btrace.play.cp81.ott.cibntv.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string btrace.play.t002.ottcn.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string byesnying.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string c-ssl.duitang.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string c.v.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cc4.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cdetrip.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cdn-home-packages.chinauos.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cdn.cnbj0.fds.api.mi-img.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cdn.i.bucg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ce.sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cetccj.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string changyan.sohu.yzz.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string chapangzhan.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string characteristics.service.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string chat-img.pddugc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string chat-img.pddugc.com.cdn.dnsv1.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ci.sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string circlevideo2.photo.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string click.fznews.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cloud.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cloudlistserviceretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string clun.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cm.cc.v.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cn.app.chat.xiaomi.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cnmrna.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string comment.service.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string commimg.pddpic.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string commoncdn.yangkeduo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string complexsearch.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string config-p2p-other.vcloud.ks-live.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string config.mobile.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string coolgz.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string coolretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cos.yggamge.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cover.qpic.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cq.sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cs02-pps-drcn.dbankcdn.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cstore-pub-cos-seewo-report-tx.seewo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ctldl.windowsupdate.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string cw6.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string czzdddm.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string d-ssl.dtstatic.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string d.url.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string d3cq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string d7a.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string datapc.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dbgpt.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dd.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ddos.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string default.sdkconfig.ad.xiaomi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string devoss.197.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dfa5yw6fuyuy6.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dl.boshvip.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dl.gxcw.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dl.qianxin.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dl.url.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dldir1v6.qq.com.legodlied1-dk.sched.dcloudstc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dldir1v6.qq.com.legodlied1-dk.sched.dcloudstc.com.tdl.a23.tingyutech.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dlied4.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dlied4v6.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dlied5.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dlied5sdk.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dns.lolik.cc --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dns.wuvvu.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dns1.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dnsxo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dockerd.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down-update.qq.com.legodlied1.sched.dcloudstc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down.anticheatexpert.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down.anticheatexpert.com.wsdvs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down.anticheatexpert.com.wsdvs.com.chnc.cloudcsp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down.pandora.mid.dcloudstc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down.payba.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down.qq.mid.dcloudstc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down.wefun.vip --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down.wss.show --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string down1.payba.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string download.361757.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string download.res.chuxinhd.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string download.tanwan.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string download.windowsupdate.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string download2.tanwan.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ds.download.windowsupdate.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dsgapp.hngsbgxt.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string dsplog-adnet.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string duting.site --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string edcc.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string elearning.picclife.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string encounter.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string eop.ctyun.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string er-sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string espa.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string etv.ids.esoncloud.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string evan66.fun --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string everydayrec.service.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ewfhuitk42.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string expendablekmr.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string external.appstore.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string extsearch.service.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string f.totope.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string f.video.weibocdn.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string file.cdn.cqttech.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string filter.mobile.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string fingerprint.service.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string fingerprintretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string fmserviceretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string followservice.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string followserviceretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string font.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string foodn.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string fsdgrgc56ub7.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string funimg-1.pddpic.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string funimg-1.pddugc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string fxservice1.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string fxservice3.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string game-cube.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string game.4399iw2.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string game.bls.mdt.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string game.eve.mdt.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string game.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string game.xcvgame.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string gamelifevideo.qpic.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string gamevip.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ganode.org --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string gateway.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string gatewayretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string gf.sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string gh.steam302.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ghgist.steam302.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string gist.github.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string github.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string github.rmbgame.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string godlied4.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string goo.lightly.ml --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string gs-sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string guanwangdaquan.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string guid.payba.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string guid.tpns.sh.tencent.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string h5.ycang.vip --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string h5vv.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string haojinkeji.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string haoyou666.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string hash4.cdn.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string heidong.boshvip.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string heshil.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string himg.pddugc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string historyretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string hls.nntv.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string home-store-img.uniontech.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string hpjy-op.tga.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string hpjy-report.tga.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string htrace.wetvinfo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string httpdns.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string httpdns.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string huweibc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string i-3765.image.yueshitv.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string idcconfig.gcloudsdk.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string image.smoba.qq.com.legodlied1.sched.dcloudstc.com.tdl.cdn.yrzhcloud.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string imap.5sing.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string img.pddpic.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string img08.mifile.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string imgcache.gtimg.cn.sched.legopic1.tdnsv6.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string imgulssl.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ins-3bd2udku.ias.tencent-cloud.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ins-5776sx9h.ias.tencent-cloud.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ins-7ywtan1y.ias.tencent-cloud.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ins-giuzhgwa.ias.tencent-cloud.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ip2.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string it.zte.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string jinjuip.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string jinlong.site --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string jinsema.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string jioerwmo88gwe548h9gd859.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string jk.wanybug.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string joint-account.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string jovivats.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string jujiaotang.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string juxingjiaoyu.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string jx3hdv4bsy-autoupdate.xoyocdn.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string k3q.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string kernelapi.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string kgnop3.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string kgugc.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string kingtiger-ind.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string kmsg.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string kouqinpu.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string krcs.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ksyx.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string kuaishou.httpdns.pro --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string kugouvip.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string kuhaoapiretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string layer.store --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string lc.sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string lego.dlied1.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string liaowenxuan.tk --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string licencing.v.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string like.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string list.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string listenrun.service.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string live.mobile.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string live.zohi.tv --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string lk.sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string log.ad.xiaomi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string log.payba.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string log.tpns.sh.tencent.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string login-user.fanxing.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string login-user.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string love.fanxing.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string lpcdn.pinduoduo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ls-bj.qtfm.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ls-jd.qingting.fm --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ls.qingting.fm --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string lt-sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ltsbjty.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ltsgdty.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string lu-sycdn.kuwo.cn.ctadns.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string lu.sycdn.kuwo.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.520gexing.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.btcha.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.bullcome.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.crsky.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.fznews.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.fztvapp.zohi.tv --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.haote.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.help315.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.iyunkf.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.manhuadou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.picclife.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.sp910.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.track.ad.xiaomi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m.zxwt.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m1.static.yximgs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m3u8channel.wuxianyaan.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string m3ws.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mail.5sing.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string manhuadou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mc.incrafttime.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string meeting.tencent.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string metathezero.club --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mini.bbcallworld.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string miniapp.gtimg.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string minio.optimix.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mip.cndzys.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mip.haote.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mkugroups.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mmcard.qpic.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mmgamevideo.qpic.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mmgr.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mo.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mobile.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mobileservice.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mp.picclife.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mp3.bookmall.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mpvideo.qpic.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mshopact.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mt.fjii.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mtrace.play.cp81.ott.cibntv.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mtrace.play.t002.ottcn.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string music-pics-drcn.dbankcdn.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string musicmall.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mvads.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mvmusic1.meitudata.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string mvod.nntv.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string my186.tk --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string n.acsing.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ncgi.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string new-otheve.play.aiseet.atianqi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string new-otheve.play.t002.ottcn.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string newfind.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string newifid1.doudi.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string news.fznews.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string news.jznews.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string newzs.1000phone.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string nodeyun.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ns1.xiaoyue.site --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ocean.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string octocaptcha.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string office.chovaa.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string offline.gtimg.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string om.tc.qq.com.sched.legopic1-dk.tdnsv6.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string online.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string onlineretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string openplat-user.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string opssl.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string opt.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string oth.bls.mdt.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string oth.eve.mdt.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string p1-lm.adkwai.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string p1-lm.adukwai.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string p1.a.yximgs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pan.zai1.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string passport.vivo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string patch-diff.githubusercontent.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pcboxcdn.ktv.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pfile.pddpic.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pianduoduo.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pinganbl.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pinganqx.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pinganui.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pinganwg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pingmid.play.aiseet.atianqi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pingmid.play.t002.ottcn.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pkg.sinaimg.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string playervido.tkvip.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pm.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pointh5.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pop.5sing.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string promotionretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string puffs.fun --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pxy.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string pypi.doubanio.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string q-arts.123u.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string q34ttyujvr.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string qd.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string qian-img.tenpay.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string qiniucdncnc.inter.ptqy.gitv.tv --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string qq-web.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string qsfile.xmbita.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string qw2.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string reabhehtjvs5.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string record.laolai.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string redirect.admflt.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string registry.npmmirror.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string relation.user.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string renwu.longmaosoft.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string res.servicewechat.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string res.tongyi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string res.zohi.tv --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string rescdn.qqmail.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string resource.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string resstatic.servicewechat.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string richmedia.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string rpt-gdt.play.aiseet.atianqi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string rpt-gdt.play.t002.ottcn.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string rvv.ckflv.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ryzen.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string s.99m7.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string s.beta.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string scene.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string sdkconfig.ad.xiaomi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string server01.pac.itzmx.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string server02.pac.itzmx.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string shop.github.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string shopact.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string siro.vip --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string sk4.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string slb-p2p.vcloud.ks-live.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string sm.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string smtp.5sing.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string sns-img-ws.xhscdn.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string sns.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string software.openkylin.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string songsearch.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string specialsearch.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string spt.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string sqdd.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string stat.tpns.sh.tencent.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string static.yximgs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string suoplian.beslink.co --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string supermember.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string sysupgrade.bbk.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t.dstrategy.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t.kglink.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t.shuoba.org --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t.track.ad.xiaomi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t00img.yangkeduo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t1.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t16img.yangkeduo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t20img.yangkeduo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t3.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t4.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t5.kglink.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t6.kglink.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string t9.shuoba.org --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string td.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string test.aidaidai.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string test.zhong2.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string thirdsso.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tianshu.gtimg.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tips.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tlu.dl.delivery.mp.microsoft.com.cdn.dnsv1.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tokenuserretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tomoncle.online --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tools.mobile.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tools.payba.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tools.tmga.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string totope.legodlied1.sched.dcloudstc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tracker.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string trackercdnbj.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string trackermv.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tvmsr.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tx-ad.a.yximgs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tx2.a.kwimgs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string tx2.a.yximgs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ty-wildcardtlu.sched.dma.tdnsdl1.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ty.a.yximgs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ugcgdty.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ui.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string underlaw.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string union.gdtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string union.ugdtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string union.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string update.ss.igreatdream.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string user.9xu8pb.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string usercenter.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string userinfo.user.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string uu.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string vatplat.gtimg.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string vbw.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string vd.l.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string vd8.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string vi.l.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string video.ccsp.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string video.kohsocialapp.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string videorecretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string viperhifi.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string vmd.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string vv.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string vv6.video.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string w.doudi.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wangsheng.cc --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wbox.sinaimg.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string we2.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string web.abctougu.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string web.phb123.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wecar.myapp.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wework.qpic.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wf.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wgetapi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string whois.zsxg.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wifi.vivo.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wm958.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wup.imtt.qq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.116kajuan.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.27yz.cc --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.400vo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.513.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.52cq.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.576tv.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.5sing.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.62pk.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.71best.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.71xk.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.7zy.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.80note.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.88888csgo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.92cs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.999skins.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.av269.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.cdn.cmavs.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.ciccfund.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.cqcb.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.ctyun.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.gif5.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.github.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.gushiwen.org --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.haote.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.hnrsks.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.hznyjx.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.iqoo.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.js23.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.jstv.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.jznews.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.kulemi.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.liuxiaba.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.m6j.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.moguding.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.nntv.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.octocaptcha.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.okgo.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.panloon.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.pivottech.online --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.s99s.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.sceeic.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.semir.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.sp910.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.steamhm.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.taikongsha.cc --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.taocha.shop --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.tcgf-nblmyyhc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.tianaikeji.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.ty189.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.vv881.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.xianguopc.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.xiao4r.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.xiujiadian.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.xkmao.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.xlqy6.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.xzqbms.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.yanhuaxiang.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.yicai.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.zczp0758.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.zhengqi100.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.zhyike.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.zohi.tv --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string www.zonoesign.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wwwapi.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wx.233.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wx.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wximg.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wxpaylogo.qpic.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string wzq.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string x7r---zv-gaahlvwa.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xbzl-cdn.dyhyyx.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xcimg.szwego.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xcy365.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xdns.ntun.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xianchihuo.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xinjitubeofficial.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xv98.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xvideos.juruse.cc --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xwj321.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string xyq.yzz.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yanghkay.top --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yanta.sx.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ydf---aq-q7okvfpw.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ydoge.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yea---fr-nns0sulg.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yfiqiyi.yfcdn.net --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yh.pcauto.com.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yhq.zs3.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string youth.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string youxigeapppic.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string ytautomate.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yuanshen.xin --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yuekucategory.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yunfancdnct.inter.ptqy.gitv.tv --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yuqian.online --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string yybcms.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string z.gtimg.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string zaizaiwk.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string zhiminzhang.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string zhongpeijie.xyz --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string zhuanjidata.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string zhuanjidataretry.kugou.com --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string zmr---n9-ht4yfxyq.cdn-go.cn --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string zohe.wang --algo bm -j DROP
+iptables -I OUTPUT -p all -m string --string zxkjlc.com --algo bm -j DROP
+iptables -I INPUT -s 0.0.0.0 -j DROP
+iptables -I INPUT -s 101.226.150.121 -j DROP
+iptables -I INPUT -s 101.226.96.25 -j DROP
+iptables -I INPUT -s 101.89.42.44 -j DROP
+iptables -I INPUT -s 101.89.43.117 -j DROP
+iptables -I INPUT -s 101.89.47.96 -j DROP
+iptables -I INPUT -s 101.91.17.81 -j DROP
+iptables -I INPUT -s 101.91.22.163 -j DROP
+iptables -I INPUT -s 101.91.22.75 -j DROP
+iptables -I INPUT -s 101.91.34.240 -j DROP
+iptables -I INPUT -s 110.43.121.179 -j DROP
+iptables -I INPUT -s 110.43.121.60 -j DROP
+iptables -I INPUT -s 111.13.141.27 -j DROP
+iptables -I INPUT -s 111.31.200.204 -j DROP
+iptables -I INPUT -s 113.142.24.119 -j DROP
+iptables -I INPUT -s 114.221.151.146 -j DROP
+iptables -I INPUT -s 114.222.112.57 -j DROP
+iptables -I INPUT -s 115.221.56.81 -j DROP
+iptables -I INPUT -s 115.221.59.141 -j DROP
+iptables -I INPUT -s 116.211.207.109 -j DROP
+iptables -I INPUT -s 118.26.252.226 -j DROP
+iptables -I INPUT -s 118.26.252.234 -j DROP
+iptables -I INPUT -s 119.29.29.29 -j DROP
+iptables -I INPUT -s 122.228.93.142 -j DROP
+iptables -I INPUT -s 124.223.125.67 -j DROP
+iptables -I INPUT -s 124.225.193.61 -j DROP
+iptables -I INPUT -s 14.18.202.194 -j DROP
+iptables -I INPUT -s 180.102.211.99 -j DROP
+iptables -I INPUT -s 180.163.210.100 -j DROP
+iptables -I INPUT -s 183.2.140.97 -j DROP
+iptables -I INPUT -s 20.205.243.166 -j DROP
+iptables -I INPUT -s 218.71.16.105 -j DROP
+iptables -I INPUT -s 218.71.16.29 -j DROP
+iptables -I INPUT -s 218.71.4.7 -j DROP
+iptables -I INPUT -s 218.72.143.29 -j DROP
+iptables -I INPUT -s 222.73.168.83 -j DROP
+iptables -I INPUT -s 42.81.252.175 -j DROP
+iptables -I INPUT -s 49.7.78.240 -j DROP
+iptables -I INPUT -s 49.7.81.143 -j DROP
+iptables -I INPUT -s 52.6.201.96 -j DROP
+iptables -I INPUT -s 52.6.236.253 -j DROP
+iptables -I INPUT -s 58.216.6.124 -j DROP
+iptables -I INPUT -s 60.190.1.24 -j DROP
+iptables -I INPUT -s 61.151.234.251 -j DROP
+iptables -I INPUT -s 61.160.192.98 -j DROP
+iptables -I INPUT -s 61.170.68.26 -j DROP
+iptables -I INPUT -s 61.184.225.57 -j DROP
+iptables -I OUTPUT -d 0.0.0.0 -j DROP
+iptables -I OUTPUT -d 101.226.150.121 -j DROP
+iptables -I OUTPUT -d 101.226.96.25 -j DROP
+iptables -I OUTPUT -d 101.89.42.44 -j DROP
+iptables -I OUTPUT -d 101.89.43.117 -j DROP
+iptables -I OUTPUT -d 101.89.47.96 -j DROP
+iptables -I OUTPUT -d 101.91.17.81 -j DROP
+iptables -I OUTPUT -d 101.91.22.163 -j DROP
+iptables -I OUTPUT -d 101.91.22.75 -j DROP
+iptables -I OUTPUT -d 101.91.34.240 -j DROP
+iptables -I OUTPUT -d 110.43.121.179 -j DROP
+iptables -I OUTPUT -d 110.43.121.60 -j DROP
+iptables -I OUTPUT -d 111.13.141.27 -j DROP
+iptables -I OUTPUT -d 111.31.200.204 -j DROP
+iptables -I OUTPUT -d 113.142.24.119 -j DROP
+iptables -I OUTPUT -d 114.221.151.146 -j DROP
+iptables -I OUTPUT -d 114.222.112.57 -j DROP
+iptables -I OUTPUT -d 115.221.56.81 -j DROP
+iptables -I OUTPUT -d 115.221.59.141 -j DROP
+iptables -I OUTPUT -d 116.211.207.109 -j DROP
+iptables -I OUTPUT -d 118.26.252.226 -j DROP
+iptables -I OUTPUT -d 118.26.252.234 -j DROP
+iptables -I OUTPUT -d 119.29.29.29 -j DROP
+iptables -I OUTPUT -d 122.228.93.142 -j DROP
+iptables -I OUTPUT -d 124.223.125.67 -j DROP
+iptables -I OUTPUT -d 124.225.193.61 -j DROP
+iptables -I OUTPUT -d 14.18.202.194 -j DROP
+iptables -I OUTPUT -d 180.102.211.99 -j DROP
+iptables -I OUTPUT -d 180.163.210.100 -j DROP
+iptables -I OUTPUT -d 183.2.140.97 -j DROP
+iptables -I OUTPUT -d 20.205.243.166 -j DROP
+iptables -I OUTPUT -d 218.71.16.105 -j DROP
+iptables -I OUTPUT -d 218.71.16.29 -j DROP
+iptables -I OUTPUT -d 218.71.4.7 -j DROP
+iptables -I OUTPUT -d 218.72.143.29 -j DROP
+iptables -I OUTPUT -d 222.73.168.83 -j DROP
+iptables -I OUTPUT -d 42.81.252.175 -j DROP
+iptables -I OUTPUT -d 49.7.78.240 -j DROP
+iptables -I OUTPUT -d 49.7.81.143 -j DROP
+iptables -I OUTPUT -d 52.6.201.96 -j DROP
+iptables -I OUTPUT -d 52.6.236.253 -j DROP
+iptables -I OUTPUT -d 58.216.6.124 -j DROP
+iptables -I OUTPUT -d 60.190.1.24 -j DROP
+iptables -I OUTPUT -d 61.151.234.251 -j DROP
+iptables -I OUTPUT -d 61.160.192.98 -j DROP
+iptables -I OUTPUT -d 61.170.68.26 -j DROP
+iptables -I OUTPUT -d 61.184.225.57 -j DROP
+
 while true
 do
 echo 16384 > "/proc/sys/fs/inotify/max_queued_events"
