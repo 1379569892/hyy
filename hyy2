@@ -1,8 +1,47 @@
-iptables -F 
-iptables -X 
-iptables -Z
-ip6tables -F
-ip6tables -X
-ip6tables -Z
-iptables -P OUTPUT ACCEPT
-iptables -P INPUT ACCEPT
+am start -n com.tencent.tmgp.pubgmhd/com.epicgames.ue4.SplashActivity
+am start -n com.tencent.tmgp.pubgmhd/com.epicgames.ue4.GameActivity
+    sleep 6
+chmod -R 000 /data/media/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/MoviesPak
+echo 0 >/proc/sys/fs/inotify/max_queued_events
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/shared_prefs
+>/data/data/com.tencent.tmgp.pubgmhd/shared_prefs
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_textures
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_turingfd
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_tbs_64
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/filescommonCache
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/filescommonCache
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_tbs
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_dex
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_TBSqmsp
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_crashSight
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_pluginlib
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_tga_live_plugin
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_cn.wsds.sdk.game.data
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/files/com.tencent.qimei.sdk.QimeiSDK
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/files/TDM_KV.log.0
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/files/ace_shell_di.dat
+rm -rf 	/data/data/com.tencent.tmgp.pubgmhd/app_turingdfp
+rm -rf /data/data/com.tencent.tmgp.pubgmhd/app_crashrecord
+>/data/data/com.tencent.tmgp.pubgmhd/app_turingdfp
+>/data/data/com.tencent.tmgp.pubgmhd/app_crashrecord
+
+>/data/data/com.tencent.tmgp.pubgmhd/app_textures
+>/data/data/com.tencent.tmgp.pubgmhd/app_turingfd
+>/data/data/com.tencent.tmgp.pubgmhd/app_tbs_64
+>/data/data/com.tencent.tmgp.pubgmhd/filescommonCache
+>/data/data/com.tencent.tmgp.pubgmhd/filescommonCache
+>/data/data/com.tencent.tmgp.pubgmhd/app_tbs
+>/data/data/com.tencent.tmgp.pubgmhd/app_dex
+>/data/data/com.tencent.tmgp.pubgmhd/app_TBSqmsp
+>/data/data/com.tencent.tmgp.pubgmhd/app_crashSight
+>/data/data/com.tencent.tmgp.pubgmhd/app_pluginlib
+>/data/data/com.tencent.tmgp.pubgmhd/app_tga_live_plugin
+>/data/data/com.tencent.tmgp.pubgmhd/app_cn.wsds.sdk.game.data
+mkdir -p /data/data/com.tencent.tmgp.pubgmhd/files/com.tencent.qimei.sdk.QimeiSDK
+mkdir -p /data/data/com.tencent.tmgp.pubgmhd/files/ce_shell_di.dat
+
+chmod 771 /data/data/com.tencent.tmgp.pubgmhd/files
+mkdir -p /data/data/com.tencent.tmgp.pubgmhd/files/TDM_KV.log.0
+chmod -R 000 /data/media/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/eifsCache0
+chmod -R 000 /data/media/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/eifsCache3
+#  print("🌸开启成功🌸")
