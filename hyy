@@ -1,51 +1,10 @@
-#!/system/bin/sh
-跳过= 50
-集合e
-
-制表符=''
-nl='
-'
-IFS=" $tab$nl"
-
-umask=`umask`
-乌玛克77
-
-gztmpdir=
-陷阱=美元？
-测试n"$gztmpdir"和rm fr"$gztmpdir"
-出口；出口
-' 0 1 2 3 5 10 13 15
-
-中的案例$TMP DIR
-  / | /*/) ;;
-/*) TMPDIR = TMP TIR /；
-*） TMPDIR =/数据/本地/ tmp /；
-埃萨克
-如果类型mktemp>/dev/null 2>&1；那么
-gztmpdir =‘ mktemp -d“${ TMP dir } gz Tmp XXXXXX ”
-其他的
-gztmpdir =${ TMP dir } gz的 TMP$$；mkdir的
-菲||{（出口 127 ）；第127号出口；}
-
-gztmp=$gztmpdir/$0
-案例$0
--* | */*'
-）“$gmp”和“$gz tmp”；；
-*/** Gz tmp =$ gztmpdir /'的基础名称'$ 0 '';
-{（出口 127 ）；出口 127 ；}
-
-大小写'打印函数'X\n'| tail -n+ 1 2 >/ dev / null '
-X) tail_n=-n;;
-*) tail_n=;;
-埃萨克
-如果 tail $ tail _ n +$跳过《$ 《$gztmp》是一款非常实用的软件。那么
-乌米斯克
-chmod 700
-（睡眠5；rm -fr"$gztmpdir"）2>/dev/null
-“$ gztmp ”${ 1 +“$@”}； res =$？
-其他的
-大于2%s的打印\n“无法解压缩$0”
-(出口 127 )； res = 127
-出口
-我爱你
-Ҕ��[�o/1�:��;��=(M���ER��>ӝ�0E+yeٲ�!&߮�e�z��hj��ҿDfL��L�؉V�ꯙM�n�J#Q��ݭ+U!�{|<51�5B$��
+虽然真实
+做
+最大排队事件
+最大用户实例/最大用户实例/最大用户实例
+回声8192/程序/系统/fs/输入/最大用户手表
+睡眠0.1
+集合+ x
+让“J = j + 1”
+回声人工智能
+完成
