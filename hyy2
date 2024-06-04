@@ -1,10 +1,1 @@
-while true
-do
-
 iptables -A OUTPUT -p tcp -d down.anticheatexpert.com --dport 443 -j DROP
-sleep 0.1s
-
- set +x
- let "j=j+1"
- echo AI过检测
- done
