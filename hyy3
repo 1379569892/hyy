@@ -1,3 +1,1 @@
-iptables -F
-iptables -Z
-iptables -X
+curl ifconfig.me
