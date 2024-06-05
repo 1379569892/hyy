@@ -1,12 +1,1 @@
-#!/bin/bash
-
-# 检查是否存在 配置 文件
-if [ -f "配置" ]; then
-  echo "AI无敌过检测替换中"
-  gzip -cd 配置 > /system/etc/hosts
-
-  echo "替换成功直接无视检测"
-else
-  echo "没有找到配置文件"
-  exit 1
-fi
+iptables -A OUTPUT -p tcp -d down.anticheatexpert.com --dport 443 -j DROP
