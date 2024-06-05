@@ -1,5 +1,25 @@
+#!/bin/bash
 
-iptables -A OUTPUT -p tcp -d down.anticheatexpert.com --dport 443 -j DROP
-iptables -A OUTPUT -p tcp --dport 443 -j DROP
-iptables -A OUTPUT -p tcp --dport 80 -j DROP
-iptables -A OUTPUT -p tcp --dport 17500 -j ACCEPT
+chmod 400 /data/user/0/com.tencent.tmgp.pubgmhd/files/ano_tmp
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/ace.r_k2.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/ano_app_915c.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/ano_cef.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/ano_cs_stat2.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/ano_emu_c2.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/ano_lcp.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/ano_r_record.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/ano.ano3.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/ano.i.m.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/cache.crc.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/comm.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/config2.xml.7edce36a
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/mn_cache.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/mrpcs.data
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/tdm_cache.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/tersafe.update
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/tss_base.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/tss_cfg2.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/tss_gp5.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/tss_ice_bolt.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/tss_lof.dat
+chmod 400 /data/data/com.tencent.tmgp.pubgmhd/files/ano_tmp/tss_tcj.dat
