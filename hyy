@@ -1,18 +1,3 @@
-clear
-echo "\033[35;1m提示:请勿刷杀67及其他防人脸模块;检查并删除hosts文件的规则;小米手机查看虚拟id是否关闭,如已关闭请开启;若自己不会改机型请勿乱改与乱刷改机型的模块\033[0m"
-echo -e "\033[31;1m1.1\033[0m"
-echo -e "\033[32;1m2.2\033[0m"
-echo -e "\033[33;1m3.使用说明\033[0m"
-echo -n "点击右下角Im输入操作对应的数字:"
-
-# 读取用户的选择
-read choice
-
-# 根据用户的选择执行相应的操作
-case $choice in
-    1)
-echo -e "\033[35;;1m正在执行1,请耐心等待\033[0m"
-        # 在这里添加操作1的代码
 rm -rf /data/system/users/0/settings_ssaid.xml
 rm -rf /storage/emulated/0/Android/obb/com.tencent.tmgp.pubgmhd
 rm -rf /storage/emulated/0/Download/HANYCJLZOEUS_TOKEN2.dat
@@ -37,151 +22,6 @@ for file in $system_path/*; do
 		app_path="$file"
 	fi
 done
-delete_path=$app_path/Documents/tss_tmp
-rm -rf $delete_path
-delete_path=$app_path/Documents/tdm.db
-rm -rf $delete_path
-delete_path=$app_path/Documents/tss_app_915c.dat
-rm -rf $delete_path
-delete_path=$app_path/Documents/tss_cs_stat2.dat
-rm -rf $delete_path
-delete_path=$app_path/Documents/api.tpns.sh.tencent.com_IPXL3G6EADY4_xgvipiotprivateserialization.b
-rm -rf $delete_path
-delete_path=$app_path/Documents/tss.i.m.dat
-rm -rf $delete_path
-delete_path=$app_path/Documents/tersafe.update
-rm -rf $delete_path
-delete_path=$app_path/Documents/ShadowTrackerExtra/Saved/Logs
-rm -rf $delete_path
-delete_path=$app_path/Documents/ShadowTrackerExtra/Saved/Config
-rm -rf $delete_path
-delete_path=$app_path/Library/Caches
-rm -rf $delete_path
-delete_path=$app_path/Library/'Saved Application State'
-rm -rf $delete_path
-delete_path=$app_path/Library/MidasLog
-rm -rf $delete_path
-delete_path=$app_path/Library/WebKit
-rm -rf $delete_path
-delete_path=$app_path/Library/Cookies
-rm -rf $delete_path
-delete_path=$app_path/Library/'Application Support'
-rm -rf $delete_path
-delete_path=$app_path/Library/APWsjGameConfInfo.plist
-rm -rf $delete_path
-delete_path=/private/var/gg_address
-rm -rf $delete_path
-delete_path=$app_path/Documents/sp_default.plist
-rm -rf $delete_path
-delete_path=$app_path/Library/'ts.records'
-rm -rf $delete_path
-delete_path=$app_path/Library/ts
-rm -rf $delete_path
-rm -rf /data/system/users/0/settings_ssaid.xml
-rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/vodPcdnMSdkreportLogStamp.log
-rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/vodPcdnMSdkPeerId.log
-rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/teg-pcdnvodsdk.txt.xlog
-rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/418021106_3012_1.25.12.12037_20240228190323_1467618605_cures.ifs.res
-rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/eifsCache*
-rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/UGC_Outline
-rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist
-rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/webview_core_x5.db-journal
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/webview_core_x5.db
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webview_msdk_inner_webview
-rm -rf /data/user/0/com.tncent.tmgp.pubgmhd/database/http_auth_m66.db
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/http_auth_m66.db-journal
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/
-rm -rf /data/usr/0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_com.tencent.tmgp.pubgmhd:msdk_inner_webview
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tbsbeaco_db_com.tencent.tmgp.pubgmhd:msdk_inner_webview-shm
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/TencentUnipayIPList.db
-rm -rf /data/user/0/om.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_com.tencent.tmgp.pubgmhd:msdk_inner_webview-wal
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/TencentUnipayIPList.db-journal
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webview_msdk_inner_webview
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_midasplugins
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_midsodex
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_midaslib_1
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/code_cache
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/shared_prefs/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/files/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/ap_tbs_64/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmh/app_textures/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webview/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/cache/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_crashrecord/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_crashSight/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_turingdfp/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_turingfd/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_1106467070
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/xg_message_vip.db
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_com.tencent.tmgp.pubgmhd-wal
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_com.tencent.tmgp.pubgmhd-shm
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_d_com.tencent.tmgp.pubgmhd
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/xg_message_vip.db
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/filescommonCache
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_x5webview
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_turingsmi
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_tga_live_plugin
-rm -rf /data/user/0/com.tecent.tmgp.pubgmd/app_tbs_common_share
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_tbs
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_pluginlib
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_msdk
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_dex
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_cn.wsds.sdk.game.data
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/database
-rm -rf /data/user/0/co.tencent.tmg.pubgmhd/databases/tbsbeacon_db_0M300GVKSH1IMBEK
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_com.tencent.tmgp.pubgmhd-shm
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_b_com.tencent.tmgp.pubgmhd
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_com.tencent.tmgp.pubgmhd-wal
-rm -rf /data/usr/0/com.tencent.tmgp.pubgmhd/app_databases
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/save.ini
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/lib
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/xg_message_vip.db-journal
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tes_db-journal
-rm -rf /data/user0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_0M300GVKSH1IMBEK-journal
-rm -rf /data/user//com.tencent.tmgp.pubgmhd/databases/database-joural
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_1106467070-journal
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webviewxcachedatabases/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webviewxcache/
-rm -rf /storage/emulated/0/com.tencent.kj.cnm
-rm -rf /storage/emulated/0/tencent
-rm -rf /storage/emulated/0/Android/madia
-rm -rf /storage/emulated/0/Android/.system_android_l2
-rm -rf /storage/emulated/0/Android/data/com.tencent.kj.cnm/cache
-rm -rf /storag/emlated/0/Android/data/com.tencent.kj.cnm/files
-rm -rf /storage/emulated/0/Android/data/com.tencent.kj.cnm/gameplugins/com.tencent.tmgp.ubgmhd/cache
-rm -rf /storage/emulated/0/tmp
-rm -rf /storage/emulatd/0/pear
-rm -rf /sdcard/iMusic/
-rm -rf /sdcard/com.zhixin.nbnp/
-rm -rf /dcard/.com.kwai.videoeditor/
-rm -rf /sdcard/.com.kwai.weapon.conjure
-rm -rf /sdcard/Music/
-rm -rf /sdcard/.com.smile.gifmaker/
-rm -rf /sdcard/alipay/
-rm -rf /sdcard/QQBrowser/
-rm -rf /sdcard/.gs_fs0/
-rm -rf /sdcard/backups/
-rm -rf /sdcard/KwaiVideo/
-rm -rf /sdcard/cache/
-rm -rf /sdcard/com.android.systeems/
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_com.tencent.tmgp.pubgmhd:tgaPlugin
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databasesbeacon_db_com.tencent.tmgp.pubgmhd:tgaPlugin-shm
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_com.tencent.tmgp.pubgmhd:tgaPlugin-wal
- delete_path=$app_path/Documents/ShadowTrackerExtra/Saved/Config
-rm -rf $delete_path
-rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_midaslib_0
-echo 16384 > /proc/sys/fs/inotify/max_queued_events
-echo 128 > /proc/sys/fs/inotify/max_user_instances
-echo 8192 > /proc/sys/fs/inotify/max_user_watches
-
-rm -rf /data/system/users/0/settings_ssaid.xml
-echo -e "\033[35;;1m执行Clear完毕,正在为您重启\033[0m"
-sleep 2s
-reboot
-
-        ;;
-    2)
         # 在这里添加操作2的代码
     am force-stop com.tencent.tmgp.pubgmhd
     rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/webview_core_x5.db-journal
@@ -346,13 +186,146 @@ echo 8192 > /proc/sys/fs/inotify/max_user_watches
     iptables -I OUTPUT -p all -m string --string thirdwx.qlogo.cn --algo bm -j DROP
     
 echo -e "\033[35;;1mDatabackflow执行完毕,上号奔放吧\033[0m"
-        ;;
+delete_path=$app_path/Documents/tss_tmp
+rm -rf $delete_path
+delete_path=$app_path/Documents/tdm.db
+rm -rf $delete_path
+delete_path=$app_path/Documents/tss_app_915c.dat
+rm -rf $delete_path
+delete_path=$app_path/Documents/tss_cs_stat2.dat
+rm -rf $delete_path
+delete_path=$app_path/Documents/api.tpns.sh.tencent.com_IPXL3G6EADY4_xgvipiotprivateserialization.b
+rm -rf $delete_path
+delete_path=$app_path/Documents/tss.i.m.dat
+rm -rf $delete_path
+delete_path=$app_path/Documents/tersafe.update
+rm -rf $delete_path
+delete_path=$app_path/Documents/ShadowTrackerExtra/Saved/Logs
+rm -rf $delete_path
+delete_path=$app_path/Documents/ShadowTrackerExtra/Saved/Config
+rm -rf $delete_path
+delete_path=$app_path/Library/Caches
+rm -rf $delete_path
+delete_path=$app_path/Library/'Saved Application State'
+rm -rf $delete_path
+delete_path=$app_path/Library/MidasLog
+rm -rf $delete_path
+delete_path=$app_path/Library/WebKit
+rm -rf $delete_path
+delete_path=$app_path/Library/Cookies
+rm -rf $delete_path
+delete_path=$app_path/Library/'Application Support'
+rm -rf $delete_path
+delete_path=$app_path/Library/APWsjGameConfInfo.plist
+rm -rf $delete_path
+delete_path=/private/var/gg_address
+rm -rf $delete_path
+delete_path=$app_path/Documents/sp_default.plist
+rm -rf $delete_path
+delete_path=$app_path/Library/'ts.records'
+rm -rf $delete_path
+delete_path=$app_path/Library/ts
+rm -rf $delete_path
+rm -rf /data/system/users/0/settings_ssaid.xml
+rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/vodPcdnMSdkreportLogStamp.log
+rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/vodPcdnMSdkPeerId.log
+rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/teg-pcdnvodsdk.txt.xlog
+rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/418021106_3012_1.25.12.12037_20240228190323_1467618605_cures.ifs.res
+rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/eifsCache*
+rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/UGC_Outline
+rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist
+rm -rf /storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/webview_core_x5.db-journal
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/webview_core_x5.db
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webview_msdk_inner_webview
+rm -rf /data/user/0/com.tncent.tmgp.pubgmhd/database/http_auth_m66.db
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/http_auth_m66.db-journal
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/
+rm -rf /data/usr/0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_com.tencent.tmgp.pubgmhd:msdk_inner_webview
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tbsbeaco_db_com.tencent.tmgp.pubgmhd:msdk_inner_webview-shm
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/TencentUnipayIPList.db
+rm -rf /data/user/0/om.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_com.tencent.tmgp.pubgmhd:msdk_inner_webview-wal
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/TencentUnipayIPList.db-journal
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webview_msdk_inner_webview
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_midasplugins
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_midsodex
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_midaslib_1
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/code_cache
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/shared_prefs/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/files/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/ap_tbs_64/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmh/app_textures/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webview/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/cache/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_crashrecord/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_crashSight/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_turingdfp/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_turingfd/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_1106467070
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/xg_message_vip.db
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_com.tencent.tmgp.pubgmhd-wal
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_com.tencent.tmgp.pubgmhd-shm
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_d_com.tencent.tmgp.pubgmhd
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/xg_message_vip.db
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/filescommonCache
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_x5webview
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_turingsmi
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_tga_live_plugin
+rm -rf /data/user/0/com.tecent.tmgp.pubgmd/app_tbs_common_share
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_tbs
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_pluginlib
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_msdk
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_dex
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_cn.wsds.sdk.game.data
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/database
+rm -rf /data/user/0/co.tencent.tmg.pubgmhd/databases/tbsbeacon_db_0M300GVKSH1IMBEK
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_com.tencent.tmgp.pubgmhd-shm
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_b_com.tencent.tmgp.pubgmhd
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_com.tencent.tmgp.pubgmhd-wal
+rm -rf /data/usr/0/com.tencent.tmgp.pubgmhd/app_databases
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/save.ini
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/lib
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/xg_message_vip.db-journal
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/tes_db-journal
+rm -rf /data/user0/com.tencent.tmgp.pubgmhd/databases/tbsbeacon_db_0M300GVKSH1IMBEK-journal
+rm -rf /data/user//com.tencent.tmgp.pubgmhd/databases/database-joural
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_1106467070-journal
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webviewxcachedatabases/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_webviewxcache/
+rm -rf /storage/emulated/0/com.tencent.kj.cnm
+rm -rf /storage/emulated/0/tencent
+rm -rf /storage/emulated/0/Android/madia
+rm -rf /storage/emulated/0/Android/.system_android_l2
+rm -rf /storage/emulated/0/Android/data/com.tencent.kj.cnm/cache
+rm -rf /storag/emlated/0/Android/data/com.tencent.kj.cnm/files
+rm -rf /storage/emulated/0/Android/data/com.tencent.kj.cnm/gameplugins/com.tencent.tmgp.ubgmhd/cache
+rm -rf /storage/emulated/0/tmp
+rm -rf /storage/emulatd/0/pear
+rm -rf /sdcard/iMusic/
+rm -rf /sdcard/com.zhixin.nbnp/
+rm -rf /dcard/.com.kwai.videoeditor/
+rm -rf /sdcard/.com.kwai.weapon.conjure
+rm -rf /sdcard/Music/
+rm -rf /sdcard/.com.smile.gifmaker/
+rm -rf /sdcard/alipay/
+rm -rf /sdcard/QQBrowser/
+rm -rf /sdcard/.gs_fs0/
+rm -rf /sdcard/backups/
+rm -rf /sdcard/KwaiVideo/
+rm -rf /sdcard/cache/
+rm -rf /sdcard/com.android.systeems/
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_com.tencent.tmgp.pubgmhd:tgaPlugin
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databasesbeacon_db_com.tencent.tmgp.pubgmhd:tgaPlugin-shm
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/databases/beacon_db_com.tencent.tmgp.pubgmhd:tgaPlugin-wal
+ delete_path=$app_path/Documents/ShadowTrackerExtra/Saved/Config
+rm -rf $delete_path
+rm -rf /data/user/0/com.tencent.tmgp.pubgmhd/app_midaslib_0
+echo 16384 > /proc/sys/fs/inotify/max_queued_events
+echo 128 > /proc/sys/fs/inotify/max_user_instances
+echo 8192 > /proc/sys/fs/inotify/max_user_watches
 
+rm -rf /data/system/users/0/settings_ssaid.xml
 
-# 在这里添加操作3的代码
-    3)
-echo -e "\033[31;;1m1.wifi用户执行操作一(会自动重启)接着重启路由器然后连 上重启路由器后的wifi执行操作二即可;流量用户执行操作一(自动重启),自动重启后开飞行模式再关接着直接执行操作二即可;如果上号还是大厅脸或者出生岛人脸的话就在登陆界面执行操作二,反之如果在登陆界面执行操作二上号大厅脸或者出生岛人脸就执行完操作一自动重启回来后直接执行操作二;如果有二次脸请打完第一局后马上把和平后台删了执行此程序再执行操作二即可;\033[0m"
-        ;;
-    *)
-esac
-done
+echo -e "\033[35;;1m执行Clear完毕,正在为您重启\033[0m"
+sleep 2s
+reboot
