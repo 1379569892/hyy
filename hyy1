@@ -12,7 +12,7 @@ su -c iptables -X
 iptables -F
 iptables -X
 iptables -Z
-clear
+
 while true
 do
    
