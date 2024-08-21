@@ -1,3 +1,4 @@
+echo -e "\033[32;;1m============= 开启拦截(大厅开) =============\033[0m"
 iptables -F
    iptables -X
    iptables -Z
@@ -13,9 +14,6 @@ iptables -F
 iptables -X
 iptables -Z
 
-while true
-do
-   
 echo 16384 > /proc/sys/fs/inotify/max_queued_events
 echo 128 > /proc/sys/fs/inotify/max_user_instances
 echo 8192 > /proc/sys/fs/inotify/max_user_watches
@@ -404,9 +402,6 @@ iptables -I OUTPUT -d 47.101.69.255 -j DROP
 iptables -I OUTPUT -d 61.151.234.200 -j DROP
 iptables -I OUTPUT -d 61.151.234.251 -j DROP
 iptables -I OUTPUT -d 61.164.142.156 -j DROP
-set +x
-    let "j=j+1"
-   echo -e "\033[35;;1m 循环：$j 次！ \033[0m" 
+echo  "----------开启成功----------"
     echo -e "\033[35;;1m AI入侵检测 \033[0m" 
-    sleep 500
 done
